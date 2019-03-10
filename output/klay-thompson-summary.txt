@@ -6,14 +6,14 @@
                                        3rd Qu.:2016   3rd Qu.:3.000   3rd Qu.: 9.000    3rd Qu.:44.00    
                                        Max.   :2016   Max.   :4.000   Max.   :11.000    Max.   :59.00    
                                                                                                          
- shot_made_flag                  action_type           shot_type   shot_distance                     opponent  
- Length:1220        Jump Shot          :688   2PT Field Goal:640   Min.   : 0.00   Houston Rockets       : 74  
- Class :character   Pullup Jump shot   :171   3PT Field Goal:580   1st Qu.:12.00   Sacramento Kings      : 74  
- Mode  :character   Cutting Layup Shot : 48                        Median :20.00   Memphis Grizzlies     : 70  
-                    Layup Shot         : 44                        Mean   :17.16   Portland Trail Blazers: 68  
-                    Step Back Jump shot: 34                        3rd Qu.:25.00   Minnesota Timberwolves: 62  
-                    Driving Layup Shot : 33                        Max.   :32.00   Los Angeles Clippers  : 60  
-                    (Other)            :202                                        (Other)               :812  
+  shot_made_flag              action_type           shot_type   shot_distance                     opponent  
+ shot_no :645    Jump Shot          :688   2PT Field Goal:640   Min.   : 0.00   Houston Rockets       : 74  
+ shot_yes:575    Pullup Jump shot   :171   3PT Field Goal:580   1st Qu.:12.00   Sacramento Kings      : 74  
+                 Cutting Layup Shot : 48                        Median :20.00   Memphis Grizzlies     : 70  
+                 Layup Shot         : 44                        Mean   :17.16   Portland Trail Blazers: 68  
+                 Step Back Jump shot: 34                        3rd Qu.:25.00   Minnesota Timberwolves: 62  
+                 Driving Layup Shot : 33                        Max.   :32.00   Los Angeles Clippers  : 60  
+                 (Other)            :202                                        (Other)               :812  
        x                 y        
  Min.   :-248.00   Min.   :-29.0  
  1st Qu.: -68.00   1st Qu.: 16.0  

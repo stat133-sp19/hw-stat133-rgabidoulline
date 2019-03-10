@@ -34,18 +34,23 @@ curry = read.csv("./data/stephen-curry.csv", header = TRUE, stringsAsFactors = F
 # adding more descriptive values to shot_made_flag
 iguodala$shot_made_flag[which(iguodala$shot_made_flag == "y")] = "shot_yes"
 iguodala$shot_made_flag[which(iguodala$shot_made_flag == "n")] = "shot_no"
+iguodala$shot_made_flag = as.factor(iguodala$shot_made_flag)
 
 green$shot_made_flag[which(green$shot_made_flag == "y")] = "shot_yes"
 green$shot_made_flag[which(green$shot_made_flag == "n")] = "shot_no"
+green$shot_made_flag = as.factor(green$shot_made_flag)
 
 durant$shot_made_flag[which(durant$shot_made_flag == "y")] = "shot_yes"
 durant$shot_made_flag[which(durant$shot_made_flag == "n")] = "shot_no"
+durant$shot_made_flag = as.factor(durant$shot_made_flag)
 
 thompson$shot_made_flag[which(thompson$shot_made_flag == "y")] = "shot_yes"
 thompson$shot_made_flag[which(thompson$shot_made_flag == "n")] = "shot_no"
+thompson$shot_made_flag = as.factor(thompson$shot_made_flag)
 
 curry$shot_made_flag[which(curry$shot_made_flag == "y")] = "shot_yes"
 curry$shot_made_flag[which(curry$shot_made_flag == "n")] = "shot_no"
+curry$shot_made_flag = as.factor(curry$shot_made_flag)
 
 # add a column containing the minute when the shot occurs
 mutate(iguodala, minute = (period*12) - minutes_remaining)

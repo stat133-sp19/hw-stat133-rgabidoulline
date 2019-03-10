@@ -6,14 +6,14 @@
                                        3rd Qu.:2016   3rd Qu.:3.000   3rd Qu.: 8.000    3rd Qu.:43.75    
                                        Max.   :2016   Max.   :4.000   Max.   :11.000    Max.   :59.00    
                                                                                                          
- shot_made_flag                  action_type            shot_type    shot_distance                     opponent   
- Length:4334        Jump Shot          :2051   2PT Field Goal:2402   Min.   : 0.00   Houston Rockets       : 271  
- Class :character   Pullup Jump shot   : 521   3PT Field Goal:1932   1st Qu.: 2.25   Sacramento Kings      : 249  
- Mode  :character   Layup Shot         : 215                         Median :19.00   Los Angeles Clippers  : 246  
-                    Driving Layup Shot : 160                         Mean   :15.58   Oklahoma City Thunder : 240  
-                    Step Back Jump shot: 133                         3rd Qu.:25.00   Portland Trail Blazers: 238  
-                    Running Layup Shot : 115                         Max.   :71.00   Memphis Grizzlies     : 225  
-                    (Other)            :1139                                         (Other)               :2865  
+  shot_made_flag              action_type            shot_type    shot_distance                     opponent   
+ shot_no :2243   Jump Shot          :2051   2PT Field Goal:2402   Min.   : 0.00   Houston Rockets       : 271  
+ shot_yes:2091   Pullup Jump shot   : 521   3PT Field Goal:1932   1st Qu.: 2.25   Sacramento Kings      : 249  
+                 Layup Shot         : 215                         Median :19.00   Los Angeles Clippers  : 246  
+                 Driving Layup Shot : 160                         Mean   :15.58   Oklahoma City Thunder : 240  
+                 Step Back Jump shot: 133                         3rd Qu.:25.00   Portland Trail Blazers: 238  
+                 Running Layup Shot : 115                         Max.   :71.00   Memphis Grizzlies     : 225  
+                 (Other)            :1139                                         (Other)               :2865  
        x                  y        
  Min.   :-248.000   Min.   :-39.0  
  1st Qu.: -56.000   1st Qu.: 13.0  
