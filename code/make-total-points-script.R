@@ -26,7 +26,7 @@ arrange(
     total_points = sum(points),
     avg_points = mean(points),
     median_points = median(points)),
-  desc(avg_points)
+  desc(total_points)
 )
 sink()
 
