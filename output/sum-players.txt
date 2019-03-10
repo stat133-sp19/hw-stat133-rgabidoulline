@@ -1,0 +1,8 @@
+          player points
+1 Andre Iguodala    574
+2 Draymond Green    776
+3   Kevin Durant   1555
+4  Klay Thompson   1742
+5  Stephen Curry   1999
+  sum_GSW_points
+1           6646
