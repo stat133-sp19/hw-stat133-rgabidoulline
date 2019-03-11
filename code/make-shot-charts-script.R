@@ -99,6 +99,11 @@ ggsave('kevin-durant-shot-chart.pdf', plot = kevin_shot_chart, path = './images'
 ggsave('klay-thompson-shot-chart.pdf', plot = klay_shot_chart, path = './images', width = 6.5, height = 5, units = "in")
 ggsave('stephen-curry-shot-chart.pdf', plot = steph_shot_chart, path = './images', width = 6.5, height = 5, units = "in")
 
+# save Thompson and Iguodala plots as png for example in report
+ggsave('andre-iguodala-shot-chart.png', plot = andre_shot_chart, path = './images', width = 6.5, height = 5, units = "in")
+ggsave('klay-thompson-shot-chart.png', plot = klay_shot_chart, path = './images', width = 6.5, height = 5, units = "in")
+
+
 # adding player names to the data frames
 iguodala = mutate(iguodala, player = "Andre Iguodala")
 green = mutate(green, player = "Draymond Green")
