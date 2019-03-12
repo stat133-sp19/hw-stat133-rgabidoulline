@@ -53,11 +53,11 @@ curry$shot_made_flag[which(curry$shot_made_flag == "n")] = "shot_no"
 curry$shot_made_flag = as.factor(curry$shot_made_flag)
 
 # add a column containing the minute when the shot occurs
-mutate(iguodala, minute = (period*12) - minutes_remaining)
-mutate(green, minute = (period*12) - minutes_remaining)
-mutate(durant, minute = (period*12) - minutes_remaining)
-mutate(thompson, minute = (period*12) - minutes_remaining)
-mutate(curry, minute = (period*12) - minutes_remaining)
+iguodala = mutate(iguodala, minute = (period*12) - minutes_remaining)
+green = mutate(green, minute = (period*12) - minutes_remaining)
+durant = mutate(durant, minute = (period*12) - minutes_remaining)
+thompson = mutate(thompson, minute = (period*12) - minutes_remaining)
+curry = mutate(curry, minute = (period*12) - minutes_remaining)
 
 # sending a summary of each player's table to output/
 sink(file = './output/andre-iguodala-summary.txt')
@@ -81,7 +81,7 @@ shots_data = rbind(iguodala, green, durant, thompson, curry)
 
 # exporting table to data/
 sink(file = './data/shots-data.csv')
-shots_data
+print(shots_data, max = 1000000)
 sink()
 
 # exporting shots data summary
