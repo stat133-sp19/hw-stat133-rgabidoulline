@@ -1,0 +1,15 @@
+"0","files = paste0(teams, ""-roster-2017.csv"")
+head(files)
+"
+"1","[1]"
+"1"," ""BOS-roster-2017.csv"""
+"1"," ""CLE-roster-2017.csv"""
+"1"," ""TOR-roster-2017.csv"""
+"1","
+"
+"1","[4]"
+"1"," ""WAS-roster-2017.csv"""
+"1"," ""ATL-roster-2017.csv"""
+"1"," ""MIL-roster-2017.csv"""
+"1","
+"

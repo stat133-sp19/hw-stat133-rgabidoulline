@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556771301975.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4152595345",
+    "id" : "1DC9607",
+    "lastKnownWriteTime" : 1556771553,
+    "last_content_update" : 1556771553157,
+    "path" : "~/Documents/stat133/hw-stat133/workout03/binomial/README.Rmd",
+    "project_path" : "README.Rmd",
+    "properties" : {
+        "cursorPosition" : "104,7",
+        "scrollLine" : "103",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

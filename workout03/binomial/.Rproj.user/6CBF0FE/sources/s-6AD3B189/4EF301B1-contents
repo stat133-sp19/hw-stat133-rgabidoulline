@@ -1,0 +1,92 @@
+---
+title: "Lab 12: Getting Started with Web Scraping"
+author: "Ruslan Gabidoulline"
+date: "Due April 26"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r packages}
+# load required packages
+library(XML)
+library(xml2)
+library(rvest)
+library(magrittr)
+library(stringr)
+library(dplyr)
+```
+
+```{r load HTML}
+# loading the HTML file
+basket = "https://www.basketball-reference.com"
+nba_html = paste0(basket, "/leagues/NBA_2017.html")
+xml_doc = read_html(nba_html)
+```
+
+```{r href attributes}
+# storing href attributes in vector
+xml_tables = xml_doc %>%
+  html_nodes("table") %>%
+  extract(1:2)
+
+hrefs = xml_tables %>%
+  html_nodes("a") %>%
+  html_attr("href")
+
+head(hrefs)
+```
+
+```{r teams}
+# creating character vector of team abbreviations
+teams = str_sub(hrefs, 8, 10)
+head(teams)
+```
+
+```{r files}
+# creating character vector of file names
+files = paste0(teams, "-roster-2017.csv")
+head(files)
+```
+
+```{r team tables}
+# creating team url
+team_url = paste0(basket, hrefs)
+
+# reading html document of team_url
+for (i in 1:length(team_url)) {
+  xml = read_html(team_url[i])
+  roster = html_table(xml)
+  write.csv(roster, files[i])
+}
+```
+
+```{r global table}
+# creating global teams table
+roster = do.call(rbind,lapply(files,read.csv))
+roster = mutate(roster, Team = rep(0, nrow(roster)))
+
+j = 1
+for (i in 1:length(teams)) {
+  roster$Team[j] = teams[i]
+  j = j+1
+  repeat {
+    if (roster$X[j] == 1) {
+      break
+    }
+    roster$Team[j] = teams[i]
+    j = j+1
+    if (j == (length(teams)+1)) {
+      break
+    }
+  }
+  i = i+1
+}
+head(roster)
+
+# saving global roster
+write.csv(roster, "nba-rosters-2017.csv")
+```
+

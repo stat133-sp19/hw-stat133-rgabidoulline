@@ -1,0 +1,126 @@
+---
+title: "Introduction to Binomial Package"
+author: "Ruslan Gabidoulline"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Introduction to Binomial Package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(binomial)
+```
+
+## General Info about Binomial
+
+`"binomial"` is a R package that provides and implements functions for calculating the probabilities of a Binomial random variable. The package includes related calculations, including probability distribution, expected value, variance, and others.
+
+
+## First Steps: Choose Function and Calculating Probability
+
+The `bin_choose()` function is an implementation of the **choose** function, which calculates the number of combinations in which *k* successes can occur in *n* trials.
+
+```{r}
+# k = 2 successes in n = 5 trials
+bin_choose(n = 5, k = 2)
+```
+
+We can use the `bin_probability()` function to calculate the binomial probability of getting a certain number of successes in a given number of trials. For instance, if the probability of success is 0.5, the probability of getting 2 successes in 5 trials is:
+
+```{r}
+# probability of getting 2 successes in 5 trials
+bin_probability(success = 2, trials = 5, prob = 0.5)
+```
+
+## Probability Distribution and Cumulative Distribution
+
+We can calculate the binomial probability distribution given certain parameters of number of successes and number of trials with the `bin_distribution()` function. This will output a table with every possible number of successes and the corresponding probability of this many successes. For instance, we can calculate the probability distribution given 5 trials and probability of success 0.5:
+
+```{r}
+# binomial probability distribution
+dist = bin_distribution(trials = 5, prob = 0.5)
+dist
+```
+
+We can then plot this distribution using the `plot.bindis()` method:
+
+```{r}
+# plot method
+plot(dist)
+```
+
+We can also compute the cumulative distribution given the same parameters using `bin_cumulative()`. This distribution gives the cumulative probability up to a certain number of successes. For example the cumulative distribution table given 5 trials and probability of success 0.5 is:
+
+```{r}
+# binomial cumulative distribution
+cumdist = bin_cumulative(trials = 5, prob = 0.5)
+cumdist
+```
+
+We can then plot this distribution using the `plot.bincum()` method:
+
+```{r}
+# plot method
+plot(cumdist)
+```
+
+## Creating a Binomial Random Variable
+
+We can also use the `bin_variable()` function to create a **Binomial Random Variable**. The function will output a table with the corresponding probability distribution of this object. For example, to create a binomial random variable with parameters of 10 trials and probability of success 0.3:
+
+```{r}
+# binomial random variable
+X = bin_variable(trials = 10, p = 0.3)
+X
+```
+
+The `summary.binvar()` function gives a nice summary of the parameters of a binomial random variable, as well as the measures of the variable, such as mean, variance, etc.
+
+```{r}
+# summary method
+summary(X)
+```
+
+## Functions of Measures
+
+Finally, this package provides functions of measures for binomial distributions. These functions globally take as inputs the number of trials and the probability of success.  
+
+`bin_mean()` gives the mean of a binomial distribution. For instance, given 10 trials and probability of success 0.3, the mean is:
+
+```{r}
+# mean of distribution with trials = 10 and prob = 0.3
+bin_mean(10, 0.3)
+```
+
+`bin_variance()` gives the variance of a binomial distribution. For instance, given 10 trials and probability of success 0.3, the variance is:
+
+```{r}
+# variance of distribution with trials = 10 and prob = 0.3
+bin_variance(10, 0.3)
+```
+
+`bin_mode()` gives the mode of a binomial distribution. For instance, given 10 trials and probability of success 0.3, the mode is:
+
+```{r}
+# mode of distribution with trials = 10 and prob = 0.3
+bin_mode(10, 0.3)
+```
+
+`bin_skewness()` gives the skewness of a binomial distribution. For instance, given 10 trials and probability of success 0.3, the skewness is:
+
+```{r}
+# skewness of distribution with trials = 10 and prob = 0.3
+bin_skewness(10, 0.3)
+```
+
+`bin_kurtosis()` gives the kurtosis of a binomial distribution. For instance, given 10 trials and probability of success 0.3, the kurtosis is:
+
+```{r}
+# kurtosis of distribution with trials = 10 and prob = 0.3
+bin_kurtosis(10, 0.3)
+```
+
+

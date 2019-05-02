@@ -1,0 +1,20 @@
+"0","xml_tables = xml_doc %>%
+  html_nodes(""table"") %>%
+  extract(1:2)
+hrefs = xml_tables %>%
+  html_nodes(""a"") %>%
+  html_attr(""href"")
+head(hrefs)
+"
+"1","[1]"
+"1"," ""/teams/BOS/2017.html"""
+"1"," ""/teams/CLE/2017.html"""
+"1"," ""/teams/TOR/2017.html"""
+"1","
+"
+"1","[4]"
+"1"," ""/teams/WAS/2017.html"""
+"1"," ""/teams/ATL/2017.html"""
+"1"," ""/teams/MIL/2017.html"""
+"1","
+"

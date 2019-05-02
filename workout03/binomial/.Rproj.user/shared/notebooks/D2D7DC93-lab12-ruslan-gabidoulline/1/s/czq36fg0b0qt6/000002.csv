@@ -1,0 +1,28 @@
+"0","team_url = paste0(basket, hrefs)
+# reading html document of team_url
+for (i in 1:length(team_url)) {
+  xml = read_html(team_url[i])
+  roster = html_table(xml)
+  write.csv(roster, files[i])
+}
+roster = do.call(rbind,lapply(files,read.csv))
+roster = mutate(roster, Team = rep(0, nrow(roster)))
+"
+"2","package ‘bindrcpp’ was built under R version 3.4.4"
+"0","j = 1"
+"0","for (i in 1:length(teams)) {"
+"0","  roster$Team[j] = teams[i]"
+"0","  j = j+1"
+"0","  repeat {"
+"0","    if (roster$X[j] == 1) {"
+"0","      break"
+"0","    }"
+"0","    roster$Team[j] = teams[i]"
+"0","    j = j+1"
+"0","    if (j == (length(teams)+1)) {"
+"0","      break"
+"0","    }"
+"0","  }"
+"0","  i = i+1"
+"0","}"
+"0","head(roster)"

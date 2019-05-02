@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556770520790.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "282E3353",
+    "lastKnownWriteTime" : 1556593247,
+    "last_content_update" : 1556770540224,
+    "path" : "~/Documents/stat133/hw-stat133/workout03/binomial/devtools-flow.R",
+    "project_path" : "devtools-flow.R",
+    "properties" : {
+        "cursorPosition" : "10,0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
