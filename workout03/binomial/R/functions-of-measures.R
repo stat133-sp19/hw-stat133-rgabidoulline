@@ -3,8 +3,8 @@
 
 ###
 # load required functions
-source("private-checker-functions.R")
-source("private-auxiliary-functions.R")
+source("./R/private-checker-functions.R")
+source("./R/private-auxiliary-functions.R")
 
 ###
 

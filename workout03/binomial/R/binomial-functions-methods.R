@@ -3,8 +3,8 @@
 
 ###
 # load required functions
-source("private-checker-functions.R")
-source("private-auxiliary-functions.R")
+source("./R/private-checker-functions.R")
+source("./R/private-auxiliary-functions.R")
 
 ###
 
@@ -46,7 +46,7 @@ for (i in 1:length(k)) {
 #' bin_probability(success = 2, trials = 5, prob = 0.5)
 #'
 #' # probability of 2 or less successes in 5 trials
-#' bin_probability(success 0:2, trials = 5, prob = 0.5)
+#' bin_probability(success = 0:2, trials = 5, prob = 0.5)
 bin_probability = function(success, trials, prob) {
   check_trials(trials)
   check_success(success, trials)
@@ -94,7 +94,7 @@ plot.bindis = function(bindis) {
 #' @return table with probability distribution and cumulative distribution
 #' @export
 #' @examples
-#' #binomial cumulative distribution
+#' # binomial cumulative distribution
 #' bin_cumulative(trials = 5, prob = 0.5)
 bin_cumulative = function(trials, prob) {
   check_trials(trials)
