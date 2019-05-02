@@ -8,4 +8,4 @@ devtools::check_man()         # check documentation
 devtools::test()              # run tests
 devtools::build_vignettes()   # build vignettes
 devtools::build()             # build bundle
-devtools::install()           # install package
+devtools::install(build_vignettes = TRUE)           # install package with vignettes
