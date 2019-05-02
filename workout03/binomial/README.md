@@ -58,10 +58,10 @@ Installation from GitHub with `"devtools"`:
 install.packages("devtools")
 
 # install "binomial" (without vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial")
+devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/workout03/binomial/")
 
 # install "binomial" (with vignettes)
-devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/workout03/binomial/", build_vignettes = TRUE)
 ```
 
 ### Usage
