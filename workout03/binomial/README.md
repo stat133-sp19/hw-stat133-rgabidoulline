@@ -55,13 +55,13 @@ Installation from GitHub with `"devtools"`:
 
 ``` r
 # install devtools
-#install.packages("devtools") 
+install.packages("devtools")
 
 # install "binomial" (without vignettes)
-#devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial")
+devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial")
 
 # install "binomial" (with vignettes)
-#devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial", build_vignettes = TRUE)
+devtools::install_github("stat133-sp19/hw-stat133-rgabidoulline/tree/master/workout03/binomial", build_vignettes = TRUE)
 ```
 
 ### Usage
@@ -98,7 +98,7 @@ dist
 plot(dist)
 ```
 
-![](README-unnamed-chunk-3-1.png)
+![](README_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
 ``` r
 
@@ -117,7 +117,7 @@ cumdist
 plot(cumdist)
 ```
 
-![](README-unnamed-chunk-3-2.png)
+![](README_files/figure-markdown_github/unnamed-chunk-3-2.png)
 
 ``` r
 
