@@ -1,11 +1,12 @@
 Package: binomial
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Functions for Binomial Probability Distributions and Measures
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Author: Ruslan Gabidoulline
+Maintainer: Ruslan Gabidoulline <rgabidoulline@berkeley.edu>
+Description: Functions for calculating and visualizing probabilities and probability and cumulative distributions of a Binomial random variable, with related measures such as expected value, variance, etc.
+License: GPL-2
 Encoding: UTF-8
 LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
