@@ -9,3 +9,4 @@ devtools::test()              # run tests
 devtools::build_vignettes()   # build vignettes
 devtools::build()             # build bundle
 devtools::install(build_vignettes = TRUE)           # install package with vignettes
+devtools::check()             # check package

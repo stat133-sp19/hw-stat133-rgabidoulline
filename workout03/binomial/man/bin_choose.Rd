@@ -19,10 +19,10 @@ Calculates the number of combinations in which k successes can occur in n trials
 }
 \examples{
 # k = 2 successes in n = 5 trials
-5choose2 = bin_choose(n = 5, k = 2)
+choose52 = bin_choose(n = 5, k = 2)
 
 # k = 3 successes in n = 8 trials
-8choose3 = bin_choose(8, 3)
+choose83 = bin_choose(8, 3)
 
 # k = 1 to 3 successes in n = 5 trials
 bin_choose(5, 1:3)

@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556922028818.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2515725152",
+    "id" : "CA311060",
+    "lastKnownWriteTime" : 1556922099,
+    "last_content_update" : 1556922099854,
+    "path" : "~/Documents/stat133/hw-stat133/workout03/binomial/R/binomial-functions-methods.R",
+    "project_path" : "R/binomial-functions-methods.R",
+    "properties" : {
+        "cursorPosition" : "21,10",
+        "scrollLine" : "11",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 5,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
